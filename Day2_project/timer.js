@@ -3,6 +3,8 @@ let running = false;
 let hours = 0;
 let seconds = 0;
 let minutes = 0;
+let con = document.getElementById("timeDisplay");
+let con2 = document.getElementById("timeInputs");
 
 function resetTimes() {
 	hours = 0;
@@ -26,6 +28,7 @@ function getTime(){
 function start() {
 	if (running) return;
 	running = true;
+    hiddenInput();
 	timer_secs = setInterval(()=>{
 		if (hours >= 0) //남은 시간이 0보다 작으면 종료
 		{
@@ -51,6 +54,7 @@ function start() {
 
 function stop() {
     running = false;
+    showInput();
     clearInterval(timer_secs);
 }
 
@@ -83,17 +87,18 @@ function checkTime() {
 }
 
 function showInput(){
-    let con = document.getElementById("timeDisplay");
+    con2.style.display = "block";
+    con.style.display = "none";
 }
 
 function hiddenInput(){
-
+    con.style.display = "block";
+    con2.style.display = "none";
 }
 
 document.getElementById('start').addEventListener('click', () => {
 
     checkTime();
-
     updateDisplay();
     if (!running) start();
 });
