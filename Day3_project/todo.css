@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'TmonMonsori';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+button {
+  /*폰트 적용을 위한 버튼 기본 속성 해제*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: 'TmonMonsori';
+
+  border-style: none;
+  padding-block: 5px;
+  padding-inline: 10px;
+  margin-inline: 3px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #8d9f8b;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'TmonMonsori', sans-serif;
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.IsSelect {
+  background-color: #8d9f8b;
+}
+
+#input_box button {
+  margin: 0 5%;
+}
+
+.button_box {
+  margin-bottom: 5%;
+}
+
+#add_but {
+  background-color: rgb(164, 129, 165);
+  border-radius: 30px;
+}
+
+#todoes_box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 0.1em solid black;
+  margin-top: 5%;
+  padding-block: 10px;
+  width: 100%;
+  background-color: gainsboro;
+}
+
+#todoes_box div {
+  margin-block: 3px;
+  margin-inline: 10px;
+}
+
+#todoes_box div button {
+  background-color: rgb(164, 129, 165);
+  border-radius: 30px;
+}
+  
+ 
+
+.blue-text {padding: 5px; color: rgb(38, 38, 83); }
+.yellow-text {padding: 5px;color: rgb(144, 151, 106); }
+.orange-text {padding: 5px; color: rgb(153, 124, 70); }
+.red-text { padding: 5px; color: rgb(146, 75, 75); }
