@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calendar</title>
+        <link rel="stylesheet" href="./calendal.css">
+    </head>
+    <body>
+        <!--달력-->
+        <div class="calendar-container">
+            <!--년도, 월-->
+            <div class="calendar-header">
+                <button id="prevMonth">&lt;&lt;</button>
+                <h2 id="monthYear"></h2>
+                <button id="nextMonth">&gt;&gt;</button>
+            </div>
+            <!--날짜들-->
+            <div class="calendar-body">
+                <!--요일들-->
+                <div class="calendar-days">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <!--날짜-->
+                <div id="calendarDates" class="calendar-dates"></div>
+            </div>
+        </div>
+        <!--메모-->
+        <div id="noteContainer" class="note-container hidden">
+            <textarea id="noteText" placeholder="메모를 작성하세요."></textarea>
+            <button id="saveNote">저장</button>
+        </div>
+    </body>
+    <script src="./calendal.js"></script>
+</html>
+
+

@@ -1,0 +1,85 @@
+body {
+    background-color: #8d9f8b;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calendar-container {
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #beaac2;
+}
+
+.calendar-body {
+    padding: 10px;
+    background-color: #f7f7f7;
+}
+
+.calendar-days, .calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-days div {
+    text-align: center;
+    font-weight: bold;
+}
+
+.calendar-dates div {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.calendar-dates div.has-note::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background-color: rgb(204, 123, 123);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.note-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white;
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    border-style: none;
+    background-color: #c7d6e7;
+    border-radius: 3px;
+}
