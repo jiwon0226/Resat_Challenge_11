@@ -14,15 +14,20 @@ header {
     background-color: #f8f9fa;
     border-bottom: 1px solid #e0e0e0;
     padding: 10px 20px;
-    position: fixed;
     width: 100%;
     top: 0;
 }
 
 .header_inner {
     display: flex;
-    flex-direction: row;
-    margin: 0 auto;
+}
+
+.header_inner > div{
+    margin: auto;
+}
+
+.nav_menu_left {
+    display: flex;
 }
 
 .brand_logo {
@@ -34,7 +39,6 @@ header {
 
 .nav_menus {
     display: flex;
-    flex-direction: row;
     width: fit-content;
 }
 
@@ -49,7 +53,7 @@ header {
 }
 
 #nav_menu_blue {
-    color: blue;
+    color: rgb(32, 125, 255);
 }
 
 .main_box {
@@ -60,18 +64,204 @@ header {
 
 .main {
     width: 1000px;
+    justify-content: center;
+    margin-bottom: 100px;
 }
 
 .promote_conotents {
     display: flex;
-    flex-direction: row;
-    margin: 20px;
+    margin-block: 70px;
+    margin-top: 40px;
 }
 
 .promote_conotent {
     background-color: blanchedalmond;
-    width: 400px;
+    width: 300px;
     height: 400px;
-    margin: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
 
+#promote_conotent_bigger {
+    width: 600px;
+}
+
+.section_title_box, .interns_box_all, .caurousel_box, .interns_box_all_rec {
+    margin: 25px;
+}
+
+.section_title > h1, p, a{
+    margin-block: 10px;
+}
+
+.section_title_contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.goto_all_contents {
+    color: rgb(32, 125, 255);
+    font-size: 10px;
+}    
+
+.interns_box_all {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px; 
+}
+
+.intern_box {
+    width: auto;
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.intern_box > .intern_image {
+    width: 100%;
+    height: 150px;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+.intern_box > .intern_contents {
+    margin: 10px;
+}
+
+.intern_content_what {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.intern_dday {
+    color: white;
+    background-color: rgb(69, 69, 69);
+    width: fit-content;
+    border-radius: 50px;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+
+.intern_categori {
+    margin-left: 10px;
+    color: gray;
+}
+
+.intern_content {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.caurousel_box {
+    display: flex;
+    align-items: center;
+    padding-block: 30px;
+    background-color: rgb(236, 236, 236);
+
+}
+
+.caurousel {
+    background-color: cadetblue;
+    border-radius: 30px;
+    width: 330px;
+    height: 220px;
+}
+
+.caurousel_content {
+    margin-left: 40px;
+}
+
+.caurousel_explain_title {
+    font-size: 15px;
+    color: gray;
+}
+
+.caurousel_explain {
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.interns_box_all_rec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px; 
+}
+
+.intern_box_rec {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.intern_box_img {
+    width: 120px;
+    height: 100%;
+    background-color: aquamarine;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.intern_box_explain {
+    display: flex;
+    flex-direction: column;
+}
+
+.intern_box_explain >.intern_categori {
+    margin: 0;
+    font-size: 12px;
+}
+
+.intern_box_explain > span {
+    margin-bottom: 5px;
+    font-weight: 900;
+}
+
+.text_company {
+    font-size: 14px;
+}
+
+.intern_box_explain > .goto_all_contents {
+    width: fit-content;
+    background-color: rgb(231, 231, 231);
+}
+
+#m_class, #happy_poly {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+footer {
+    font-size: 12px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e0e0e0;
+    padding: 10px 20px;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+.footer_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_inner > div{
+    margin: auto;
+}
+
+.footer_menus {
+    display: flex;
+}
+
+.footer_menu {
+    padding: 10px;
 }
