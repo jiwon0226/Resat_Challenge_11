@@ -35,6 +35,9 @@ header {
     width: 160px;
     height: 30px;
     background-color: black;
+    background-image: url('img/logo1.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .nav_menus {
@@ -80,10 +83,13 @@ header {
     height: 400px;
     margin: 0 auto;
     border-radius: 10px;
+    background-image: url('img/img_2.jpg');
+    background-size: cover;
 }
 
 #promote_conotent_bigger {
     width: 600px;
+    background-image: url('img/img_1.jpg');
 }
 
 .section_title_box, .interns_box_all, .caurousel_box, .interns_box_all_rec {
@@ -124,6 +130,8 @@ header {
     height: 150px;
     background-color: aquamarine;
     border-radius: 10px;
+    background-image: url(img/com_1.jpg);
+    background-size: cover;
 }
 
 .intern_box > .intern_contents {
@@ -168,6 +176,8 @@ header {
     border-radius: 30px;
     width: 330px;
     height: 220px;
+    background-image: url('img/cau1.jpg');
+    background-size: cover;
 }
 
 .caurousel_content {
@@ -206,6 +216,8 @@ header {
     background-color: aquamarine;
     border-radius: 10px;
     margin-right: 10px;
+    background-image: url('img/com_logo1.jpg');
+    background-size: cover;
 }
 
 .intern_box_explain {
@@ -235,6 +247,11 @@ header {
 #m_class, #happy_poly {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
+}
+
+#m_class .intern_image {
+    background-image: url('img/com_2.jpg');
+    background-size: cover;
 }
 
 footer {
