@@ -1,0 +1,48 @@
+.con_padding {
+    display: flex;
+    justify-content: center;
+}
+.con_box {
+    width: 30%;
+    height: 30%;
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+.container {
+    width: 300vw;
+    transition: transform 0.5s;
+    display: flex;
+    align-items: center;
+}
+.inner {
+    width: 100vw;
+    /*float: left;*/
+}
+
+.inner img {
+    width: 30%;
+    height: 30%;
+}
+
+.button_con{
+    
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    
+}
+
+.button_con button{
+    background-color: cornflowerblue;
+    border: none;
+}
+.but{
+    width: 6%;
+    height: 0.5em;
+    margin: 0.4%;
+}
+#shift{
+    width: 2%;
+    height: 6%;
+    text-align: center;
+}
