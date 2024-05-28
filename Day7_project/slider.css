@@ -1,9 +1,6 @@
-
 .con_padding {
     display: flex;
-    align-items: center;
     justify-content: center;
-    
 }
 .con_box {
     width: 30%;
