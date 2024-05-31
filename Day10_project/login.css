@@ -1,0 +1,79 @@
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #8d9f8b;
+}
+.login_box{
+    
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    min-width: 230px;
+    height: fit-content;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 5px 5px 5px gray;
+    
+}
+#login_header{
+    text-align: center;
+    font-size: larger;
+}
+
+#error_msg_box{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: none;
+    width: 80%;
+    border: 0.1em solid red;
+    border-radius: 10px;
+    text-align: center;
+    margin:0.5em;
+    background: rgb(255, 225, 230);
+} 
+
+#error_msg{
+    padding: 10px;
+    color: red;
+    
+}
+
+.login_form_field{
+    margin: 0.5em;
+}
+
+#login_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"], input[type="password"] {
+    
+    width: 90%;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 30px;
+    border: 0.1em solid green;
+    background-color: antiquewhite;
+    max-width:200px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    
+    width: 90%;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 30px;
+    border: 0.1em solid green;
+    outline-color: #FE6B8B;
+    background-color: rgb(255, 226, 188);
+    max-width:200px;
+}
