@@ -30,6 +30,18 @@ h1 {
   font-family: "MoonFont", sans-serif;
 }
 
+@media (max-width: 900px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
 .memo-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -120,7 +132,13 @@ h1 {
 @media (max-width: 900px) {
   .memo-container {
     grid-template-columns: 1fr;
-    max-width: 400px;
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+  }
+
+  body {
+    padding: 0px;
   }
 }
 
