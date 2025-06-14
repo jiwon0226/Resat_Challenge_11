@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'MoonFont';
+  src: url('./fonts/MOON.TTF') format('truetype');
+}
+
+html, body {
+  height: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg,
+    #ffe0e9 0%,
+    #fff9c4 20%,
+    #d0f4de 40%,
+    #cce5ff 60%,
+    #e1bee7 80%);
+  background-size: 200% 200%;
+  font-family: 'MoonFont', sans-serif;
+  padding: 40px;
+  margin: 0;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  color: #000000;
+  font-family: 'MoonFont', sans-serif;
+}
+
+.memo-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.memo {
+  padding: 15px;
+  border-radius: 15px;
+  border: 5px dashed #ccc;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.memo:nth-child(1) {
+  background-color: #fff9c4;
+  border-color: #f0e68c;
+}
+
+.memo:nth-child(2) {
+  background-color: #ffccbc;
+  border-color: #e69580;
+}
+
+.memo:nth-child(3) {
+  background-color: #c8e6c9;
+  border-color: #81c784;
+}
+
+.memo:nth-child(4) {
+  background-color: #b3e5fc;
+  border-color: #4fc3f7;
+}
+
+.memo:nth-child(5) {
+  background-color: #e1bee7;
+  border-color: #ce93d8;
+}
+
+.memo:nth-child(6) {
+  background-color: #f8bbd0;
+  border-color: #f48fb1;
+}
+
+.memo:nth-child(7) {
+  background-color: #d7ccc8;
+  border-color: #a1887f;
+}
+
+.memo:nth-child(8) {
+  background-color: #dcedc8;
+  border-color: #aed581;
+}
+
+.memo textarea {
+  font-family: 'MoonFont', sans-serif;
+  width: 100%;
+  height: 130px;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  font-size: 25px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+.memo textarea::placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.memo textarea:focus {
+  outline: none;
+}
+
+.author {
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: right;
+  color: #000000;
+  font-family: 'MoonFont', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .memo-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .memo-container {
+    grid-template-columns: 1fr;
+  }
+}
